@@ -1,0 +1,51 @@
+@charset "utf-8";
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+*{margin: 0;padding: 0;}
+
+.wrap{
+    width: 100%;
+}
+
+.progress-container {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 2px;
+    background: #009fe8;
+    width: 0%;
+  }
+
+.header{width: 100%; position: fixed; border-bottom: 1px solid #ddd; z-index: 999;}
+.header.on{background-color: rgba(255, 255, 255, 0.9); transition: 0.2s; z-index: 99; border-bottom: 1px solid #009fe8;}
+.header-wrap{max-width: 1200px; margin: 0 auto; height: 80px; display: flex; justify-content: center; align-items: center;}
+.header .logo{width: 120px;}
+.header .logo img{width: 100%;}
+
+.header .gnb{position: absolute; right: 20%; top: 50%; transform: translateY(-50%); cursor: pointer;}
+.header .gnb .line{width: 30px; height: 1px; background-color: #fff;}
+.header .gnb.on .line{background-color: #009fe8;}
+.header .gnb:hover .line{background-color: #009fe8;}
+.header .gnb.on:hover .line{background-color: darkslategray;}
+.header .gnb .line:nth-child(2){margin: 7px 0;}
+
+.header .lnb{width: 100%; position: absolute; display: flex; justify-content: space-around; background-color: rgba(255, 255, 255, 0.9); box-sizing: border-box; padding: 50px 0; transition: 0.2s; z-index: 98; display: none;}
+.header .lnb.on{display: block; display: flex; transition: 0.3s linear; border-bottom: 1px solid #009fe8;}
+.header .lnb ul{line-height: 30px;}
+.header .lnb ul li{cursor: pointer;}
+.header .lnb ul li a{position: relative; color: darkslategrey;}
+.header .lnb ul li a::after{width: 0; height: 1px; background-color: #009fe8; position: absolute; content: ""; bottom: -2px; left: 0; transition: 0.2s;}
+.header .lnb ul li:hover a{font-weight: bold;}
+.header .lnb ul li:hover a::after{width: 100%; transition: 0.2s;}
+
+.top-btn{width: 50px; height: 50px; border-radius: 5px; border: 1px solid #009fe8; position: fixed; bottom: 10%; right: 5%; cursor: pointer; font-size: 25px; text-align: center; color: #009fe8; padding-top: 5px; box-sizing: border-box; display: none;}
+.top-btn.on{display: block;}
+.top-btn:hover{background-color: #009fe8; color: #fff; transition: 0.2s;}
+
+.footer{width: 100%; background-color: #323232; padding: 50px 0; color: rgba(255, 255, 255, 0.4); font-size: 13px;}
+.footer .footer-wrap{max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 100px;}
+.footer strong{color: #fff; font-size: 15px;}
+.footer .footer-inner{display: flex; gap:20px;}
