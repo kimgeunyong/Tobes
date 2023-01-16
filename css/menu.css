@@ -15,7 +15,7 @@ a{text-decoration: none; color: #000;}
   
   .progress-bar {
     height: 3px;
-    background: #006A9C;
+    background: #009fe8;
     width: 0%;
   }
 
@@ -27,8 +27,8 @@ a{text-decoration: none; color: #000;}
 
 .header .gnb{position: absolute; right: 20%; top: 50%; transform: translateY(-50%); cursor: pointer;}
 .header .gnb .line{width: 30px; height: 2px; background-color: #fff;}
-.header .gnb.on .line{background-color: #006A9C;}
-.header .gnb:hover .line{background-color: #006A9C;}
+.header .gnb.on .line{background-color: #009fe8;}
+.header .gnb:hover .line{background-color: #009fe8;}
 .header .gnb.on:hover .line{background-color: darkslategray;}
 .header .gnb .line:nth-child(2){margin: 6px 0;}
 
@@ -40,6 +40,10 @@ a{text-decoration: none; color: #000;}
 .header .lnb ul li a::after{width: 0; height: 1px; background-color: #009fe8; position: absolute; content: ""; bottom: -2px; left: 0; transition: 0.2s;}
 .header .lnb ul li:hover a{font-weight: bold;}
 .header .lnb ul li:hover a::after{width: 100%; transition: 0.2s;}
+
+
+.content .main-text h2 strong{color: #009fe8;}
+
 
 .top-btn{width: 50px; height: 50px; border-radius: 5px; border: 1px solid #009fe8; position: fixed; bottom: 10%; right: 5%; cursor: pointer; font-size: 25px; text-align: center; color: #009fe8; padding-top: 5px; box-sizing: border-box; display: none;}
 .top-btn.on{display: block;}

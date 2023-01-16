@@ -12,11 +12,9 @@ $("document").ready(function(){
     }
 
 
-    var hw = $(".header-wrap").offset().top;
     $(window).scroll(function() {
-        var window = $(this).scrollTop();
-  
-      if(hw < window) {
+      
+      if ($(this).scrollTop() > 0) {
         $(".header").addClass("on");
         $(".header .logo img").attr("src", "img/tobes-logo.png");
         $(".header .gnb").addClass("on");
@@ -27,6 +25,22 @@ $("document").ready(function(){
         $(".header .gnb").removeClass("on");
         $(".top-btn").removeClass("on");
       }
+
+    // var hw = $(".header-wrap").offset().top;
+    // $(window).scroll(function() {
+    //     var window = $(this).scrollTop();
+  
+    //   if(hw < window) {
+    //     $(".header").addClass("on");
+    //     $(".header .logo img").attr("src", "img/tobes-logo.png");
+    //     $(".header .gnb").addClass("on");
+    //     $(".top-btn").addClass("on");
+    //   } else {
+    //     $(".header").removeClass("on");
+    //     $(".header .logo img").attr("src", "img/tobes-wlogo.png");
+    //     $(".header .gnb").removeClass("on");
+    //     $(".top-btn").removeClass("on");
+    //   }
   })
 
   $(".top-btn").click(function() {
@@ -37,11 +51,12 @@ $("document").ready(function(){
 
   $(".header .gnb").click(function(){
       $(".header .lnb").toggleClass("on")
-      // if (".header .lnb".addclass("on")){
+      // $(".header").toggleClass("on");
+      // if (".header .lnb.on") {
       //   $(".header").addClass("on");
-      // }
-      // else{
-
+      //   $(".header .logo img").attr("src", "img/tobes-logo.png");
+      // } else{
+      //   $(".header").removeClass("on");
       // }
   })
 
