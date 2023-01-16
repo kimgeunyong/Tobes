@@ -16,12 +16,12 @@ $("document").ready(function(){
       
       if ($(this).scrollTop() > 0) {
         $(".header").addClass("on");
-        $(".header .logo img").attr("src", "img/tobes-logo.png");
+        $(".header .logo img").attr("src", "img/tobes-logo2.png");
         $(".header .gnb").addClass("on");
         $(".top-btn").addClass("on");
       } else {
         $(".header").removeClass("on");
-        $(".header .logo img").attr("src", "img/tobes-wlogo.png");
+        $(".header .logo img").attr("src", "img/tobes-wlogo2.png");
         $(".header .gnb").removeClass("on");
         $(".top-btn").removeClass("on");
       }
