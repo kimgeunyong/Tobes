@@ -11,6 +11,8 @@ $("document").ready(function(){
       document.getElementById("myBar").style.width = scrolled + "%";
     }
 
+    // window.onkeydown = (e) => console.log(e);
+    // window.addEventListener("keydown", (e) => console.log(e));
 
     $(window).scroll(function() {
       
@@ -42,6 +44,7 @@ $("document").ready(function(){
     //     $(".top-btn").removeClass("on");
     //   }
   })
+
 
   $(".top-btn").click(function() {
     $('html, body').animate({

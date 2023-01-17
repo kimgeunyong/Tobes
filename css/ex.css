@@ -1,0 +1,121 @@
+@charset "utf-8";
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+*{margin: 0;padding: 0;}
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{font-family: 'Noto Sans KR', sans-serif;} */
+
+.board-wrap{
+    font-size: 10px;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.board-title{
+    margin-bottom: 30px;
+}
+.board-title strong{
+    font-size: 3rem;
+}
+.board-title p{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.bt-wrap{
+    margin-top: 30px;
+    text-align: center; 
+    font-size: 0;
+}
+.bt-wrap a{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+.bt-wrap a:first-child{
+    margin-left: 0;
+}
+.bt-wrap a.on{
+    background: #000;
+    color: #fff;
+}
+
+.board-list{
+    width: 100%;
+    border-top: 2px solid #000;
+}
+.board-list > div{
+    border-bottom: #ddd;
+    font-size: 0;
+}
+.board-list > div.top{
+    border-bottom: 1px solid #999;
+}
+.board-list > div:last-child{
+    border-bottom: 1px solid #000;
+}
+.board-list > div > div{
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.board-list > div.top > div{
+    font-weight: 600;
+}
+.board-list .num{
+    width: 10%;
+}
+.board-list .title{
+    width: 60%;
+    text-align: left;
+}
+.board-list .top .title{
+    text-align: center;
+}
+.board-list .writer{
+    width: 10%;
+}
+.board-list .date{
+    width: 10%;
+}
+.board-list .count{
+    width: 10%;
+}
+
+.board-page{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+.board-page a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+}
+.board-page a.bt{
+    font-size: 1.2rem;
+    padding-top: 10px;
+    letter-spacing: -1px;
+}
+.board-page a.num{
+    font-size: 1.4rem;
+    padding-top: 9px;
+}
+.board-page a.num.on{
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+.board-page a:first-child{
+    border-left: 1px solid #ddd;
+}

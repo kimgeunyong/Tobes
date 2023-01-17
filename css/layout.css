@@ -11,9 +11,27 @@ ul li:nth-last-child(1){margin-bottom: 0px;}
 .content h2{color: rgb(70, 62, 62);}
 /* .content .content-item h2{color:rgba(0, 106, 156, 1);} */
 .content .content-wrap{max-width: 1200px;}
-.content .main-banner{width: 100%; height: 900px; background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/hong-kong-1990268_1920.jpg); position: relative;  background-size: cover; background-position: center; animation: fadein 2s ease 0s;}
-.content .main-text{position: absolute; top: 50%; left: 20%; transform: translateY(-50%); color: #fff !important; z-index: 2;}
+.main{width: 100%; height: 100vh; overflow: hidden;}
+.content .main-banner{width: 100%; height: 100vh; background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/circle-3041437_1920.jpg); position: relative;  background-size: cover; background-position: center; animation: zoomin 2.2s ease 0s;}
+@keyframes zoomin{
+    from {
+        transform: scale(1.2);
+        
+    } to {
+        transform: scale(1);
+    }
+}
+.content .main-text{position: absolute; top: 50%; left: 40%; transform: translate(-50%, -40%); color: #fff !important; z-index: 2;}
 .content .main-text h2{font-size: 65px; font-weight: 100; line-height: 1.3; letter-spacing: 1px; text-align: right; color: #fff !important;}
+.content .main-text strong{position: absolute; right: -40%; animation: fww 2.2s ease 0s; }
+@keyframes fww {
+    from {
+        opacity: 0;
+        right: 0;
+    } to {
+        opacity: 1;
+    }
+}
 
 .content .content-wrap{max-width: 1200px; margin: 0 auto; text-align: center; padding: 0 2%;}
 .content .content-section{padding-top: 150px;}
@@ -36,7 +54,8 @@ left: 50%; transform: translateX(-50%);}
 .content .content2 .content-box2 ul li:nth-child(2){padding:10px 0; border-radius: 0 0 15px 15px;}
 .content .content2 .content-box2 ul li{margin-bottom: 0; overflow: hidden; cursor: pointer;}
 .content .content2 ul{border: 1px solid #ddd; border-radius: 15px; overflow: hidden;}
-.content .content2 ul:hover img{transform: scale(1.1); transition: 0.2s; border-color: #009fe8;}
+.content .content2 ul:hover img{transform: scale(1.1); transition: 0.2s;}
+.content .content2 ul:hover{transition: 0.2s; border-color: #009fe8;}
 .content .content2 ul:hover li:nth-child(2){color: #009fe8; transition: 0.2s; font-weight: bold;}
 
 .content .content3{display: flex; padding-bottom: 150px; gap: 15px;}
@@ -163,10 +182,13 @@ left: 50%; transform: translateX(-50%);}
 /* content02-2_엔지니어링 사업자  */
 .wrap-grid02{display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; padding: 80px 2% !important;}
 .wrap-grid02 .content-grid{overflow: hidden; box-sizing: border-box; cursor: pointer;}
+.wrap-grid02 .content-grid:hover{border: 3px solid #ddd;}
+.wrap-grid02 .content-grid:hover .gridbox-txt h2::after{width: 15%; transition: 0.2s;}
 .wrap-grid02 .content-grid:hover img{transform: scale(1.02);}
 /* .wrap-grid02 .content-grid:hover .gridbox-txt h2{box-shadow: 0px 3px 7px 1px rgb(0 0 0 / 9%);} */
 .wrap-grid02 .content-grid .gridbox-txt{padding: 20px 0;}
-.wrap-grid02 .content-grid .gridbox-txt h2{color: #009fe8; width: 50%; border: 3px solid #ddd; margin: 0 auto; padding: 5px 0; border-radius: 5px;}
+.wrap-grid02 .content-grid .gridbox-txt h2{color: #009fe8; width: 50%; margin: 0 auto; padding: 5px 0; position: relative;}
+.wrap-grid02 .content-grid .gridbox-txt h2::after{background-color: #ddd; width: 0%; height: 3px; position: absolute; content: ""; bottom: -2px; left: 50%;transform: translateX(-50%);}
 .wrap-grid02 .content-grid .gridbox-txt ul{margin-top: 20px;}
 .wrap-grid02 .content-grid .gridbox-img{font-size: 0; overflow: hidden;}
 .wrap-grid02 .content-grid img{width: 100%;}
@@ -174,9 +196,11 @@ left: 50%; transform: translateX(-50%);}
 .modal{position: fixed; width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; z-index: 50; padding: 0 2%; box-sizing: border-box; display: flex; align-items: center; display: none; transition: 0.2s;}
 .modal.on{display: block; transition: 0.2s;}
 .modal .modal-wrap{max-width: 1200px; background-color: #eee;  box-sizing: border-box; padding: 80px 0; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.modal .modal-wrap ul{height: 150px; overflow-y: scroll; width: 50%; margin: 0 auto; background-color: rgba(221, 221, 221, 0.5);}
+.modal .modal-wrap ul li{word-break: break-all;}
 .modal .modal-img{width: 50%; margin: 0 auto;}
 .modal img{width: 100%;}
-.modal h2{margin: 30px 0;}
+.modal h2{margin: 30px 0; color: #009fe8;}
 .modal .modal-close{position: absolute; top: 2%; right: 2%; cursor: pointer; font-size: 20px;}
 .modal .modal-close:hover{color: #009fe8;}
 /* content02-2_엔지니어링 사업자  */
@@ -213,3 +237,4 @@ left: 50%; transform: translateX(-50%);}
 
 /* content04_공지사항 */
 /* content04_공지사항 */
+
