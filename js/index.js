@@ -54,6 +54,10 @@ $("document").ready(function(){
 
   $(".header .gnb").click(function(){
       $(".header .lnb").toggleClass("on")
+      $(".header .gnb .line").toggleClass("on")
+      $(".header").addClass("on");
+      $(".header .logo img").attr("src", "img/tobes-logo2.png");
+      $(".header .gnb").addClass("on");
       // $(".header").toggleClass("on");
       // if (".header .lnb.on") {
       //   $(".header").addClass("on");

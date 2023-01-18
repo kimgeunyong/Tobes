@@ -7,21 +7,9 @@ a{text-decoration: none; color: inherit;}
 
 .board-wrap{
     font-size: 10px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 100px auto;
 }
-
-.board-title{
-    margin-bottom: 30px;
-}
-.board-title strong{
-    font-size: 3rem;
-}
-.board-title p{
-    margin-top: 5px;
-    font-size: 1.4rem;
-}
-
 .bt-wrap{
     margin-top: 30px;
     text-align: center; 
@@ -70,11 +58,11 @@ a{text-decoration: none; color: inherit;}
 .board-list .num{
     width: 10%;
 }
-.board-list .title{
+.board-list .board-sub-title{
     width: 60%;
     text-align: left;
 }
-.board-list .top .title{
+.board-list .top .board-sub-title{
     text-align: center;
 }
 .board-list .writer{
@@ -104,12 +92,12 @@ a{text-decoration: none; color: inherit;}
 }
 .board-page a.bt{
     font-size: 1.2rem;
-    padding-top: 10px;
+    padding-top: 5px;
     letter-spacing: -1px;
 }
 .board-page a.num{
     font-size: 1.4rem;
-    padding-top: 9px;
+    padding-top: 3px;
 }
 .board-page a.num.on{
     border-color: #000;
@@ -118,4 +106,120 @@ a{text-decoration: none; color: inherit;}
 }
 .board-page a:first-child{
     border-left: 1px solid #ddd;
+}
+
+.board-view{
+    width: 100%;
+    border-top: 2px solid #000;
+    /* font-size: 1.4rem; */
+}
+.board-view .board-sub-title{
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 2rem;
+}
+.info{
+    display: flex;
+}
+.board-view .info{
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    /* font-size: 0; */
+}
+.board-view .info dl{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.board-view .info dl:first-child{
+    padding-left: 0;
+}
+.board-view .info dl::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+.board-view .info dl:first-child::before{
+    display: none;
+}
+.board-view .info dl dt,
+.board-view .info dl dd{
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.board-view .info dl dt{
+
+}
+.board-view .info dl dd{
+    margin-left: 10px;
+    color: #777;
+}
+.board-view .cont{
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1.4rem;
+}
+
+.board-write{
+    border-top: 2px solid #000;
+
+}
+.board-write .board-sub-title,
+.board-write .info{
+    padding: 15px;
+}
+.board-write .info{
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #000;
+}
+.board-write .cont{
+    border-bottom: 1px solid #000;
+}
+.board-write .cont textarea{
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+.board-write .board-sub-title dl{
+    font-size: 0;
+}
+.board-write .board-sub-title input[type="text"],
+.board-write .info input[type="text"],
+.board-write .info input[type="password"]{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.board-write .board-sub-title input[type="text"]{
+    width: 80%;
+}
+.board-write .info dl{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.board-write .board-sub-title dt,
+.board-write .board-sub-title dd,
+.board-write .info dt,
+.board-write .info dd{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+.board-write .board-sub-title dt,
+.board-write .info dt{
+    width: 100px;
+}
+.board-write .board-sub-title dd{
+    width: calc(100% - 100px);
 }

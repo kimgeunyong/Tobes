@@ -7,6 +7,8 @@
     <title>Tobes</title>
 
     <link rel="stylesheet" href="css/ex.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="js/jquery-1.12.4.min.js"></script>
@@ -16,7 +18,7 @@
 </head>
 <body>
     <div class="wrap">
-        <!-- <div class="header">
+        <div class="header">
             <div class="header-wrap">
                 <div class="logo"><a href="index.html"><img src="img/tobes-wlogo2.png" alt="logo"></a></div>
                 <div class="gnb hamburger">
@@ -51,9 +53,9 @@
                 <li><a href="content04.html">공지사항</a></li>
                 </ul>
             </div>
-        </div> -->
+        </div>
         <div class="content">
-            <!-- <div class="banner sub03">
+            <div class="banner sub03">
                 <div class="sub-wrap">
                     <div class="banner-title">
                         <h2>공지사항</h2>
@@ -66,8 +68,8 @@
                         </ul>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="sub-banner">
+            </div>
+            <div class="sub-banner">
                 <div class="banner-wrap">
                     LG유플러스는 1996년 7월 11일 설립 이래 현재까지 고객의 삶에 의미 있는 변화를 만들기 위해 노력해 왔습니다.
                     이동통신사업과 초고속 인터넷, VoIP(데이터 음성통화), IPTV 서비스로 구성된 결합 서비스와 각종 솔루션 및 데이터 서비스 사업을
@@ -77,96 +79,40 @@
             </div>
             <div class="main-title">
                 <h2>공지사항</h2>
-            </div> -->
+                <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+            </div>
             <div class="content-wrap">
                 <div class="board-wrap">
-                    <div class="board-title">
-                        <strong>공지사항</strong>
-                        <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
-                    </div>
-                    <div class="board-list-wrap">
-                        <div class="board-list">
-                            <div class="top">
-                                 <div class="num">번호</div>
-                                 <div class="title">제목</div>
-                                 <div class="writer">글쓴이</div>
-                                 <div class="date">작성일</div>
-                                 <div class="count">조회</div>
+                    <div class="board-write-wrap">
+                        <div class="board-write">
+                            <div class="board-sub-title">
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd><input type="text" placeholder="제목 입력"></dd>
+                                </dl>
                             </div>
-                            <div>
-                                <div class="num">5</div>
-                                 <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
-                                 <div class="writer">김이름</div>
-                                 <div class="date">2023.01.17</div>
-                                 <div class="count">33</div>
+                            <div class="info">
+                                <dl>
+                                    <dt>글쓴이</dt>
+                                    <dd><input type="text" placeholder="글쓴이 입력"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>비밀번호</dt>
+                                    <dd><input type="text" placeholder="비밀번호 입력"></dd>
+                                </dl>
                             </div>
-                            <div>
-                                <div class="num">4</div>
-                                 <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
-                                 <div class="writer">김이름</div>
-                                 <div class="date">2023.01.17</div>
-                                 <div class="count">33</div>
+                            <div class="cont">
+                                <textarea placeholder="내용 입력"></textarea>
                             </div>
-                            <div>
-                                <div class="num">3</div>
-                                 <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
-                                 <div class="writer">김이름</div>
-                                 <div class="date">2023.01.17</div>
-                                 <div class="count">33</div>
-                            </div>
-                            <div>
-                                <div class="num">2</div>
-                                 <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
-                                 <div class="writer">김이름</div>
-                                 <div class="date">2023.01.17</div>
-                                 <div class="count">33</div>
-                            </div>
-                            <div>
-                                <div class="num">1</div>
-                                 <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
-                                 <div class="writer">김이름</div>
-                                 <div class="date">2023.01.17</div>
-                                 <div class="count">33</div>
-                            </div>
-                        </div>
-                        <div class="board-page">
-                            <a href="#" class="bt first"><<</a>
-                            <a href="#" class="bt prev"><</a>
-                            <a href="#" class="num on">1</a>
-                            <a href="#" class="num">2</a>
-                            <a href="#" class="num">3</a>
-                            <a href="#" class="num">4</a>
-                            <a href="#" class="num">5</a>
-                            <a href="#" class="bt next">></a>
-                            <a href="#" class="bt last">>></a>
-                        </div>
                         <div class="bt-wrap">
-                            <a href="#" class="on">목록</a>
-                            <a href="#">수정</a>
+                            <a href="content04.html" class="on">목록</a>
+                            <a href="view.html">수정</a>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="content-notice">
-                    <ul class="number">
-                        <li>번호</li>
-                        <li>1</li>
-                    </ul>
-                    <ul class="name">
-                        <li>제목</li>
-                        <li>23/01/16 공지사항</li>
-                    </ul>
-                    <ul class="id">
-                        <li>글쓴이</li>
-                        <li>관리자</li>
-                    </ul>
-                    <ul class="날짜">
-                        <li>날짜</li>
-                        <li>23/01/16</li>
-                    </ul>
-                </div> -->
             </div>
         </div>
-        <!-- <div class="top-btn">
+        <div class="top-btn">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
         <div class="footer">
@@ -191,7 +137,7 @@
                 </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
 </html>
