@@ -14,6 +14,16 @@ $("document").ready(function(){
     // window.onkeydown = (e) => console.log(e);
     // window.addEventListener("keydown", (e) => console.log(e));
 
+    function AOS_MOBILE() {
+      if (matchMedia("screen and (max-width: 1100px)").matches) {
+    
+        // $('content-box2 ul').attr('data-aos-duration', '0');
+        $('content-box2 .content2-item2').attr('data-aos-delay', '0');
+    
+      }
+    }
+    AOS_MOBILE();
+
     $(window).scroll(function() {
       
       if ($(this).scrollTop() > 0) {
@@ -27,22 +37,6 @@ $("document").ready(function(){
         $(".header .gnb").removeClass("on");
         $(".top-btn").removeClass("on");
       }
-
-    // var hw = $(".header-wrap").offset().top;
-    // $(window).scroll(function() {
-    //     var window = $(this).scrollTop();
-  
-    //   if(hw < window) {
-    //     $(".header").addClass("on");
-    //     $(".header .logo img").attr("src", "img/tobes-logo.png");
-    //     $(".header .gnb").addClass("on");
-    //     $(".top-btn").addClass("on");
-    //   } else {
-    //     $(".header").removeClass("on");
-    //     $(".header .logo img").attr("src", "img/tobes-wlogo.png");
-    //     $(".header .gnb").removeClass("on");
-    //     $(".top-btn").removeClass("on");
-    //   }
   })
 
 
