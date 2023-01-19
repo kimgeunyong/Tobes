@@ -17,8 +17,8 @@ $("document").ready(function(){
     function AOS_MOBILE() {
       if (matchMedia("screen and (max-width: 1100px)").matches) {
     
-        // $('content-box2 ul').attr('data-aos-duration', '0');
-        $('content-box2 .content2-item2').attr('data-aos-delay', '0');
+        $('asd').attr('data-aos-delay', '0');
+        // $('content-box2 .content2-item2').attr('data-aos-delay', '0');
     
       }
     }
@@ -84,5 +84,45 @@ $("document").ready(function(){
   $(".modal .modal-close").click(function(){
     $(".content .modal").fadeOut(200).removeClass("on")
   })
+
+
+
+$(".mobile-gnb").click(function(){
+  $(".mobile").toggleClass("on")
+  $(".mobile-wrap").toggleClass("on")
+  $(".mobile-gnb i").toggleClass("on")
+})
+
+var ww = $(window).width();
+var mySwiper = undefined;
+
+function initSwiper() {
+
+  if (ww < 640 && mySwiper == undefined) {
+    mySwiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      simulateTouch: true,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  } else if (ww >= 640 && mySwiper != undefined) {
+    mySwiper.destroy();
+    mySwiper = undefined;
+    // $('.swiper-wrapper').removeAttr('class', '.swiper-wrapper');
+    // $('.swiper-slide').removeAttr('class', '.swiper-slide');
+  }
+}
+
+initSwiper();
+
+$(window).on('resize', function () {
+  ww = $(window).width();
+  initSwiper();
+});
+
 
 })

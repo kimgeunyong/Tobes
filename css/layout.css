@@ -1,10 +1,13 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 *{font-family: 'Noto Sans KR', sans-serif;}
+body{overflow-x: hidden;}
 ul li{margin-bottom: 5px;}
 ul li:nth-last-child(1){margin-bottom: 0px;}
 .main-title{padding: 100px 0; font-size: 25px; text-align: center;}
 .root_daum_roughmap{width:100% !important;}
+
+.wrap{overflow-x: hidden;}
 
 /* .main-title h2{color:rgba(0, 106, 156, 1) !important;} */
 /* .main-title h2::after{position: absolute; content: ""; width: 2%; height: 3px; background-color: #009fe8; bottom: -10px; left: 50%; transform: translateX(-50%);} */
@@ -199,9 +202,9 @@ left: 50%; transform: translateX(-50%);}
 .modal{position: fixed; width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; z-index: 50; padding: 0 2%; box-sizing: border-box; display: flex; align-items: center; display: none; transition: 0.2s;}
 .modal.on{display: block; transition: 0.2s;}
 .modal .modal-wrap{max-width: 1200px; background-color: #eee;  box-sizing: border-box; padding: 80px 0; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-.modal .modal-wrap ul{height: 150px; overflow-y: scroll; width: 50%; margin: 0 auto; background-color: rgba(221, 221, 221, 0.5);}
+.modal .modal-wrap ul{height: 150px; overflow-y: scroll; width: 90%; padding: 2%; margin: 0 auto; box-sizing: border-box; background-color: rgba(221, 221, 221, 0.5);}
 .modal .modal-wrap ul li{word-break: break-all;}
-.modal .modal-img{width: 50%; margin: 0 auto;}
+.modal .modal-img{width: 90%; margin: 0 auto;}
 .modal img{width: 100%;}
 .modal h2{margin: 30px 0; color: #009fe8;}
 .modal .modal-close{position: absolute; top: 2%; right: 2%; cursor: pointer; font-size: 20px;}

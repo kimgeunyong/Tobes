@@ -54,6 +54,34 @@
             </ul>
         </div>
       </div>
+      <div class="mobile">
+        <div class="mobile-wrap">
+          <div class="mobile-lnb">
+            <div class="mobile-gnb"><i class="fa-solid fa-angle-left"></i></div>
+            <ul>
+              <li><strong>회사소개</strong></li>
+              <li><a href="content01.html">회사소개</a></li>
+              <li><a href="content01-2.html">연혁</a></li>
+              <li><a href="content01-3.html">오시는 길</a></li>
+            </ul>
+            <ul>
+              <li><strong>사업소개</strong></li>
+              <li><a href="content02.html">사업분야</a></li>
+              <li><a href="content02-2.html">엔지리어닝 사업자</a></li>
+              <li><a href="content02-3.html">소프트웨어개발</a></li>
+            </ul>
+            <ul>
+              <li><strong>주요실적</strong></li>
+              <li><a href="content03.html">ITS 실시 설계</a></li>
+              <li><a href="content03-2.html">교통영향평가</a></li>
+            </ul>
+            <ul>
+              <li><strong>고객센터</strong></li>
+              <li><a href="content04.html">공지사항</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="content">
         <div class="main">
           <div class="main-banner">
@@ -106,30 +134,42 @@
             <div class="content-section content2">
               <div class="title"><h2>BUSINESS</h2></div>
               <div class="content-box2">
-                <ul class="content2-item1" data-aos="fade-right" data-aos-duration="700">
+                <ul class="content2-item1 content2-item" data-aos="fade-right" data-aos-duration="700">
                   <li><img src="img/card-img1.jpg" alt="card-img"></li>
                   <li>교통영향평가대행</li>
                 </ul>
-                <ul class="content2-item2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
+                <ul class="content2-item2 content2-item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
                   <li><img src="img/card-img2.jpg" alt="card-img"></li>
                   <li>대중교통 분야 법정계획 수립</li>
                 </ul>
-                <ul class="content2-item3" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                <ul class="content2-item3 content2-item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
                   <li><img src="img/card-img3.jpg" alt="card-img"></li>
                   <li>교통정책연구/ITS 실시설계</li>
                 </ul>
-                <ul class="content2-item4" data-aos="fade-right" data-aos-duration="700">
+                <ul class="content2-item4 content2-item" data-aos="fade-right" data-aos-duration="700">
                   <li><img src="img/card-img4.jpg" alt="card-img"></li>
                   <li>주차관제 S/W플랫폼</li>
                 </ul>
-                <ul class="content2-item5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
+                <ul class="content2-item5 content2-item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
                   <li><img src="img/card-img5.jpg" alt="card-img"></li>
                   <li>모바일 통합 S/W 플랫폼</li>
                 </ul>
-                <ul class="content2-item6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
+                <ul class="content2-item6 content2-item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700">
                   <li><img src="img/card-img6.jpg" alt="card-img"></li>
                   <li>표준운송원가S/W 플랫폼</li>
                 </ul>
+                <script>
+                  function AOS_MOBILE() {
+                    if (matchMedia("screen and (max-width: 1100px)").matches) {
+
+                      $('.content2-item:nth-child(odd)').attr('data-aos-delay', '0');
+                      $('.content2-item:nth-child(even)').attr('data-aos-delay', '150');
+                      // $('content-box2 .content2-item2').attr('data-aos-delay', '0');
+
+                    }
+                  }
+                  AOS_MOBILE();
+                </script>
               </div>
             </div>
             <div class="content-section content3">
