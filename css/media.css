@@ -58,6 +58,8 @@
     .content01 .business .business-content ul .onlytext:nth-child(5){grid-column: 1/2; grid-row: 4/5;}
     .content01 .business .business-content ul .onlytext:nth-child(6){grid-column: 1/2; grid-row: 6/7;}
 
+    .content01 .workplace .workplace-content::after{display: none;}
+
 
     .wrap-grid02{grid-template-columns: repeat(1, 1fr);}
     .wrap-grid02 .content-grid{width: 100%;}
