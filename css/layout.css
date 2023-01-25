@@ -93,9 +93,11 @@ left: 50%; transform: translateX(-50%);}
 .content .banner-title .inbox li{margin-bottom: 0;}
 .content .banner-title .inbox li:nth-last-child(1){font-weight: bold; color: #009fe8; position: relative; border-bottom: 1px solid #009fe8;}
 .content .sub-banner{background-color: #f8f8f8;}
-.content .sub-banner .banner-wrap{max-width: 1100px; margin: 0 auto; padding: 50px 2%; font-size: 20px; line-height: auto; color: darkslategrey;}
+.content .sub-banner .banner-wrap{max-width: 1100px; margin: 0 auto; padding: 50px 2%; font-size: 20px; line-height: auto; color: darkslategrey; font-weight: 500;}
 /* banner */
 
+
+.content-text li{font-weight: 500;}
 /* content01_회사소개 */
 /* content01_회사소개 */
 .content .content-item{padding-top: 80px;}
@@ -125,7 +127,7 @@ left: 50%; transform: translateX(-50%);}
 .content01 .workplace .workplace-content:nth-child(3){border-top: 1px solid #000;}
 .content01 .workplace .workplace-content ul{text-align: center; width: 16%; padding: 16px 32px; background-color: #ddd; font-weight: bold;}
 .content01 .workplace .workplace-content span{display: inline-block; width: 60%; text-align: left; vertical-align: middle; padding: 16px 32px; font-size: 14px;}
-.content01 .workplace .workplace-content:nth-child(3) span{display: flex; height: 95px; align-items: center; padding: 0 32px;}
+.content01 .workplace .workplace-content:nth-child(3) span{display: flex; align-items: center; padding: 0 32px;}
 
 .content01 .subsidiary{text-align: right; padding-bottom: 80px;}
 .content01 .subsidiary .subsidiary-content{display: flex; justify-content: space-between; height: 230px; align-items: center; text-align: center; border: 1px solid #eee;}
@@ -140,7 +142,7 @@ left: 50%; transform: translateX(-50%);}
 
 /* content01-2_연혁 */
 /* content01-2_연혁 */
-.content02 .sub-banner-title{width: 300px; height: 300px; background-color: #eee; margin: 0 auto; border-radius: 150px; margin-top: 80px; display: flex; align-items: center; justify-content: center; color: #009fe8;}
+.content02 .sub-banner-title{width: 300px; height: 300px; background-color: #eee; margin: 0 auto; border-radius: 150px; margin-top: 80px; text-align: center; color: #009fe8;box-sizing: border-box; padding-top: 120px;}
 .content02 .wrap-grid{display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows: repeat(3); position: relative;}
 .content02 .wrap-grid::after{position: absolute; content: ""; width: 2px; height: 100%; background-color: #eee; left: 50%;transform: translateX(-50%);}
 
