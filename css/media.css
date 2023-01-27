@@ -10,6 +10,9 @@
  .content01 ul { text-align: center !important; } 
  /* .content .content2 .content-box2 ul li:nth-child(1){height: 100px;} */
 
+ .content01 .business .business-content ul .mix{height: auto;}
+ .content01 .business .business-content ul li .img{height: 108px;}
+
  .content01 .workplace .workplace-content ul { font-size: 0.9rem; } 
  .content01 .workplace .workplace-content span { font-size: 0.8rem; width: 50%; } 
  .content01 .workplace .workplace-content::after { font-size: 0.8rem; } 
@@ -94,9 +97,13 @@
     .modal h2{font-size: 18px;}
     .modal .modal-wrap ul{font-size: 14px;}
 
+    /*  */
+    .content-its ul li{font-size: 15px;}
+   /*  */
+
     /* mobile */
     /* mobile */
-    .mobile .mobile-lnb{font-size: 13px; padding: 0 2%;}
+    .mobile .mobile-lnb{font-size: 13px; padding: 10px 2%;}
     .mobile .mobile-lnb ul:not(:nth-child(1)){margin-top: 50px;}
 
 
@@ -109,17 +116,22 @@
     .footer .footer-wrap ul{flex-basis: 100%; text-align: left;}
 }
 
+/* fold */
+/* fold */
 @media screen and (max-width: 300px) {
    .content .content1 .content-box{gap: 0;}
    .content .main-text h2{font-size: 30px;}
    .content .content1 ul li h2{font-size: 20px;}
    .content .content1 ul li{font-size: 13px;}
 
-   .content02 .sub-banner-title{width: 200px; height: 200px;}
+   .content02 .sub-banner-title{width: 200px; height: 200px; padding-top: 70px;}
    .content02 .sub-banner-title h2,.content02 .year h2{font-size: 18px;}
    .content02 .sub-banner-title p, .content02 .year ul{font-size: 14px;}
 
    .content03 .map{padding: 0;}
    .content03 .map .content-map-txt{padding: 20px;}
    .content03 .map .content-map-txt .content-map-subtxt ul li{font-size: 14px;}
+
+   .modal .modal-wrap{top: 60%;}
+
 }
